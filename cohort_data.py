@@ -14,10 +14,20 @@ def all_houses(filename):
     Return:
       - set[str]: a set of strings
     """
+    enrollment = open(filename)
 
-    houses = set()
+    
 
-    # TODO: replace this with your code
+    for line in enrollment:
+      student = line.split('|')
+
+      first_name = student[0]
+      last_name = student[1]
+      house = student[2]
+      adviser = student[3]
+      cohort_name = student[4]
+  
+    houses = set[house]
 
     return houses
 
