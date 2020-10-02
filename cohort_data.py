@@ -171,7 +171,11 @@ def all_data(filename):
 
     all_data = []
 
-    # TODO: replace this with your code
+    enrollment = open(filename)
+
+    for line in filename:
+      first_name, last_name, house, advisor, cohort_name = line.rstrip().split('|')
+      
 
     return all_data
 
